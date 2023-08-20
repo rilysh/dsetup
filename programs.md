@@ -14,7 +14,7 @@ apt install fonts-noto fonts-noto-cjk fonts-noto-cjk-extra fonts-noto-core fonts
 ```sh
 apt install 7zip alsa-utils faenza-icon-theme qemu-system-x86 qbittorrent dosbox gimp aumix flameshot htop wireshark \
 cool-retro-term make cmake ninja gcc gdb clang lldb nasm valgrind vim emacs zip unrar-free zsh ffmpeg mpv git \
-mypaint python3-pip wget curl libsdl1.2debian libsdl2-dev linux-headers-amd64 icewm \
+mypaint python3-pip wget curl libsdl1.2debian libsdl2-dev linux-headers-amd64 icewm simplescreenrecorder
 ```
 
 ### VSCode
