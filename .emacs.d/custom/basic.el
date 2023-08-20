@@ -15,3 +15,6 @@
 ;; Set color of statusbar
 (set-face-foreground 'mode-line "#606060")
 (set-face-background 'mode-line "#202020")
+
+(global-display-line-numbers-mode t)
+;; (setq display-line-numbers-type 'relative)

@@ -17,3 +17,6 @@
 
 ;; xdg-open
 (global-set-key (kbd "C-c p") 'dired-open-file)
+
+;; linum mode
+(global-set-key (kbd "C-c l") 'linum-mode)

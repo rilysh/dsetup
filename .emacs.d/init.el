@@ -1,9 +1,9 @@
-;; Load all elisp files in a directory
+; Load all elisp files in a directory
 (defun load-directory (dir)
   (let ((load-it (lambda (f)
 		   (load-file (concat (file-name-as-directory dir) f)))
 		 ))
-    (mapc load-it (directory-files dir nil "\\.el"))))
+    (mapc load-it (directory-files dir nil "\\.el$"))))
 
 (load-directory "~/.emacs.d/custom")
 (custom-set-variables
@@ -13,7 +13,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(tango-dark))
  '(package-selected-packages
-   '(multiple-cursors yasnippet company markdown-mode simpleclip))
+   '(markdown-preview-mode multiple-cursors yasnippet company markdown-mode simpleclip))
  '(warning-suppress-log-types '((comp) (comp)))
  '(warning-suppress-types '((comp))))
 (custom-set-faces
