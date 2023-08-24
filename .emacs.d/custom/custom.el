@@ -5,7 +5,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(tango-dark))
- '(package-selected-packages '(yasnippet company markdown-mode simpleclip))
+ '(package-selected-packages
+   '(go-mode lsp-ui rustic rust-mode markdown-preview-mode multiple-cursors yasnippet company markdown-mode simpleclip))
  '(warning-suppress-log-types '((comp) (comp)))
  '(warning-suppress-types '((comp))))
 (custom-set-faces

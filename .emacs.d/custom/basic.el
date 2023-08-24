@@ -16,5 +16,5 @@
 (set-face-foreground 'mode-line "#606060")
 (set-face-background 'mode-line "#202020")
 
-(global-display-line-numbers-mode t)
+(global-display-line-numbers-mode 1)
 ;; (setq display-line-numbers-type 'relative)
