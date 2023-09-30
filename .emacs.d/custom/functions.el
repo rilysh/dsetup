@@ -22,3 +22,13 @@
     (message "Opening %s..." file)
     (call-process "xdg-open" nil 0 nil file)
     (message "Opening %s done" file)))
+
+(defun c-offset-switch ()
+  "Switch to 4 characters width offset"
+  (setq c-default-style "linux"
+	c-basic-offset 4))
+
+(defun print-total-size (&optional path)
+  "Print the total size of a file or a directory"
+  (interactive "sPath: ")
+  (shell-command (format "du -sh %s" path)))
