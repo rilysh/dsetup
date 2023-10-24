@@ -28,3 +28,7 @@
 
 ;; C-offset-switch function call
 (global-set-key (kbd "C-c C-l") 'c-offset-switch)
+
+;; move-text-up for moving text region upwards or move-text-down to move text region downwards
+(global-set-key (kbd "M-<up>") 'move-text-up)
+(global-set-key (kbd "M-<down>") 'move-text-down)
