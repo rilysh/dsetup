@@ -1,3 +1,4 @@
+
 ;; UI configration
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
@@ -15,13 +16,15 @@
 ;; Set color of statusbar
 ;; (set-face-foreground 'mode-line "#606060")
 ;; (set-face-background 'mode-line "#202020")
-
+;; Set cursor color
 (add-hook 'after-init-hook
 	  (lambda ()
 	    (set-face-attribute 'mode-line nil
 				:box nil
 				:background "#130A03"
-				:foreground "#B8B4B9")))
+				:foreground "#B8B4B9")
+	    (set-cursor-color "#ed9d6f")))
+
 ;; (custom-set-faces
 ;;  '(minibuffer-prompt ((t (:background "black" :foreground "yellow")))))
 
@@ -30,3 +33,6 @@
 ;; Set fullscreen mode
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
+(set-frame-font "Menlo" nil t)
+
