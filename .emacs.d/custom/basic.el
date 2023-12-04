@@ -1,11 +1,10 @@
-
 ;; UI configration
 (setq inhibit-startup-screen t)
 (menu-bar-mode 0)
 (tool-bar-mode 0)
 
 ;; Ido mode
-(ido-mode 1)
+(ido-mode t)
 
 ;; Disable upcase-region
 (put 'upcase-region 'disabled nil)
@@ -28,11 +27,9 @@
 ;; (custom-set-faces
 ;;  '(minibuffer-prompt ((t (:background "black" :foreground "yellow")))))
 
-(global-display-line-numbers-mode 1)
-
-;; Set fullscreen mode
+;; Fullscreen default window
 (custom-set-variables
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
+(global-display-line-numbers-mode t)
 (set-frame-font "Menlo" nil t)
-

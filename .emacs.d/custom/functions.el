@@ -9,19 +9,18 @@
         (message "Buffer '%s' is not visiting a file!" name)
       (if (get-buffer new-name)
           (message "A buffer named '%s' already exists!" new-name)
-        (progn
-          (rename-file filename new-name 1)
-          (rename-buffer new-name)
-          (set-visited-file-name new-name)
-          (set-buffer-modified-p nil))))))
+
+        (rename-file filename new-name 1)
+        (rename-buffer new-name)
+        (set-visited-file-name new-name)
+        (set-buffer-modified-p nil)))))
 
 ;; dired-open-file
 ;; Comment: In dired, open the file named on this line
 (defun dired-open-file ()
   "In dired, open the file named on this line"
   (interactive)
-  (let* ((file (dired-get-filename nil t)))
-    (message "Opening %s..." file)
+  (let ((file (dired-get-filename nil t)))
     (call-process "xdg-open" nil 0 nil file)
     (message "Opening %s done" file)))
 
