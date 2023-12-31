@@ -5,6 +5,9 @@
 ;; Kill current buffer
 (global-set-key (kbd "C-x x") 'kill-this-buffer)
 
+;; Kill all buffers
+(global-set-key (kbd "C-c k") 'kill-all-buffers)
+
 ;; Keyboard yank
 (global-set-key (kbd "C-c y") 'clipboard-yank)
 
