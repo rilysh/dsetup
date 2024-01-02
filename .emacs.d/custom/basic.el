@@ -32,4 +32,4 @@
  '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 (global-display-line-numbers-mode t)
-(set-frame-font "Menlo" nil t)
+(set-frame-font "Menlo 11" nil t)

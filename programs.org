@@ -17,25 +17,14 @@ cool-retro-term make cmake ninja gcc gdb clang lldb nasm valgrind vim emacs zip 
 mypaint python3-pip wget curl libsdl1.2debian libsdl2-dev linux-headers-amd64 icewm simplescreenrecorder
 #+end_src
 
-*** VSCode
-#+begin_src sh
-curl -L https://code.visualstudio.com/sha/download\?build\=stable\&os\=linux-deb-x64 -o code.deb
-dpkg -i code.deb
-sleep 1
-rm -f code.deb
-#+end_src
-
 *** Wine
 #+begin_src sh
 dpkg --add-architecture i386
 mkdir -pm755 /etc/apt/keyrings
 wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
 wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/bookworm/winehq-bookworm.sources
-update_upgrade
 # Hope it will not break the system 
 apt install --install-recommends -y winehq-stable
-
-# dpkg --remove-architecture i386 # when done
 #+end_src
 
 *** Oh-my-zsh
@@ -44,7 +33,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 #+end_src
 
 *** Emacs packages
-#+begin_src sh
-company elfeed lsp-mode lsp-ui lsp-pyright markdown-mode markdown-preview-mode multiple-cursors python-mode
-simpleclip use-package rustic
+#+begin_src elisp
+  elfeed lsp-mode lsp-ui lsp-pyright markdown-mode
+  markdown-preview-mode multiple-cursors python-mode
+  simpleclip use-package dyalog-mode go-mode yaml-mode
+  impatient-mode
 #+end_src

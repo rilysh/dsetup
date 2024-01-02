@@ -1,2 +1,2 @@
-(add-to-list 'load-path "/home/rilysh/emacs-libvterm")
+;; Enable vterm
 (require 'vterm)
