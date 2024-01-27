@@ -2,6 +2,9 @@
 ;; (setq org-support-shift-select t)
 
 (setq org-replace-disputed-keys t)
+(add-hook 'org-mode-hook
+          (lambda ()
+            (setq org-support-shift-select 'always)))
 
 (add-hook 'org-shiftup-final-hook 'windmove-up)
 (add-hook 'org-shiftleft-final-hook 'windmove-left)

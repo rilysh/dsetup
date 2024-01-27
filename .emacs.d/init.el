@@ -34,7 +34,8 @@
  ;; If there is more than one, they won't work right.
  '(initial-frame-alist '((fullscreen . maximized)))
  '(package-selected-packages
-   '(yaml-mode vterm use-package simpleclip rustic python-mode multiple-cursors modus-themes markdown-preview-mode lsp-ui lsp-pyright impatient-mode gruvbox-theme go-mode elfeed dyalog-mode company color-theme-sanityinc-tomorrow)))
+   '(nasm-mode company rustic flycheck-rust rust-mode flycheck yaml-mode vterm use-package simpleclip python-mode multiple-cursors modus-themes markdown-preview-mode lsp-ui lsp-pyright impatient-mode gruvbox-theme go-mode elfeed dyalog-mode color-theme-sanityinc-tomorrow))
+ '(warning-suppress-log-types '((comp))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
