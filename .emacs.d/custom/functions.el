@@ -50,9 +50,13 @@
 		 (string-match "^[^\*]" name))
 	(funcall 'kill-buffer buffer)))))
 
-;; Tango theme
+;; Gruvbox theme
 (defun set-gruv-theme ()
   (load-theme 'gruvbox-dark-soft t))
+
+;; Tango dark theme
+(defun set-tango-theme ()
+  (load-theme 'tango-dark t))
 
 ;; transpose-lines emacs
 ;; This was posted by Andreas Politz (ap) in a Google Group in 2008

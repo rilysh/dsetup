@@ -3,7 +3,9 @@
 ;; elfeed lsp-mode lsp-ui lsp-pyright markdown-mode
 ;; markdown-preview-mode multiple-cursors python-mode
 ;; simpleclip use-package dyalog-mode go-mode yaml-mode
-;; impatient-mode
+;; impatient-mode cmake-mode exec-path-from-shell
+;; flycheck-rust gruvbox-theme nasm-mode org-preview-html
+;; rustic vterm git-commit clang-format+
 
 ;; Add melpa repo
 (defun add-melpa-repo ()
@@ -34,8 +36,7 @@
  ;; If there is more than one, they won't work right.
  '(initial-frame-alist '((fullscreen . maximized)))
  '(package-selected-packages
-   '(nasm-mode company rustic flycheck-rust rust-mode flycheck yaml-mode vterm use-package simpleclip python-mode multiple-cursors modus-themes markdown-preview-mode lsp-ui lsp-pyright impatient-mode gruvbox-theme go-mode elfeed dyalog-mode color-theme-sanityinc-tomorrow))
- '(warning-suppress-log-types '((comp))))
+   '(yaml-mode vterm use-package simpleclip rustic python-mode org-preview-html nasm-mode multiple-cursors lsp-pyright gruvbox-theme go-mode git-commit flycheck-rust exec-path-from-shell elfeed dyalog-mode company cmake-mode clang-format+)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

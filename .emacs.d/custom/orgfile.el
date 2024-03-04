@@ -10,3 +10,9 @@
 (add-hook 'org-shiftleft-final-hook 'windmove-left)
 (add-hook 'org-shiftdown-final-hook 'windmove-down)
 (add-hook 'org-shiftright-final-hook 'windmove-right)
+
+;; Remove validation link when exporting an org file
+(setq org-html-validation-link nil)
+
+;; Disable the default CSS to being exported
+(setq org-html-head-include-default-style nil)
