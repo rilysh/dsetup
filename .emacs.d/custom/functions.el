@@ -51,11 +51,13 @@
 	(funcall 'kill-buffer buffer)))))
 
 ;; Gruvbox theme
-(defun set-gruv-theme ()
+(defun set-gruvbox-theme ()
+  (interactive)
   (load-theme 'gruvbox-dark-soft t))
 
 ;; Tango dark theme
 (defun set-tango-theme ()
+  (interactive)
   (load-theme 'tango-dark t))
 
 ;; transpose-lines emacs
